@@ -1,0 +1,1 @@
+export const API_CORE_URL = 'http://localhost:8000/api/core'; // Replace with your API URL
