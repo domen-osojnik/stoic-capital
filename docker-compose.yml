@@ -3,14 +3,12 @@ version: '3.8'
 services:
   db:
     image: postgres:15
-    container_name: stoiccapital_db
-    restart: always
     environment:
-      POSTGRES_USER: stoic_user
-      POSTGRES_PASSWORD: stoic_password
-      POSTGRES_DB: stoiccapital
+      POSTGRES_DB: stoic_capital_final
+      POSTGRES_USER: stoic-capital-admin
+      POSTGRES_PASSWORD: stoic-capital-admin
     ports:
-      - "5433:5432"
+      - "5434:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
